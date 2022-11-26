@@ -24,3 +24,8 @@ body {
 .navbar a.active {
     float: left;
 }
+
+.active {
+    width: 20px;
+    height: auto;
+}
