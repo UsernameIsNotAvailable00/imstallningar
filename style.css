@@ -4,21 +4,27 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
+    margin: 0;
 }
 
-/*navbar links*/
+/*style the navbar*/
 .navbar img {
     float: left;
-    width: 70px;
+    width: 80px;
     height: auto;
 }
 
-.navbar a {
+.navR {
     text-decoration: none;
+    font-size: 17px;
     float: right;
-    display: block;
+    display: inline;
     color: black;
     text-align: center;
-    padding: 20px;
+    padding: 13px;
 }
 
+.navR:hover {
+    opacity: 0.7;
+    text-decoration: underline red solid 2px;
+}
