@@ -26,14 +26,3 @@ body {
     float: left;
     width: 20px;
 }
-
-.dropdown-content {
-    display: block;
-    position: absolute;
-    background-color: pink;
-    padding: 13px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
