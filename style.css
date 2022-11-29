@@ -13,6 +13,12 @@ body {
 }
 
 /*navbar links*/
+.navbar img {
+    float: left;
+    width: 70px;
+    height: auto;
+}
+
 .navbar a {
     text-decoration: none;
     float: right;
@@ -22,8 +28,3 @@ body {
     padding: 20px;
 }
 
-.navbar img {
-    float: left;
-    width: 40px;
-    height: auto;
-}
