@@ -14,6 +14,7 @@ body {
 
 /*navbar links*/
 .navbar a {
+    text-decoration: none;
     float: right;
     display: block;
     color: white;
@@ -21,11 +22,18 @@ body {
     padding: 13px;
 }
 
-.navbar a.active {
+.navbar img {
     float: left;
+    width: 20px;
 }
 
-.active {
-    width: 5px;
-    height: auto;
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: pink;
+    padding: 13px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
