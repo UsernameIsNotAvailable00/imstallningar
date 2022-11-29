@@ -25,4 +25,5 @@ body {
 .navbar img {
     float: left;
     width: 20px;
+    height: auto;
 }
