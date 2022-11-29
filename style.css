@@ -8,23 +8,23 @@ body {
 }
 
 /*style the navbar*/
-.navbar img {
+.navimg {
     float: left;
-    width: 80px;
+    width: 100px;
     height: auto;
+    padding: 15px;
 }
 
 .navR {
     text-decoration: none;
     font-size: 17px;
     float: right;
-    display: inline;
+    display: block;
     color: black;
     text-align: center;
-    padding: 13px;
+    padding: 13px 20px;
 }
 
 .navR:hover {
-    opacity: 0.7;
-    text-decoration: underline red solid 2px;
+    border-bottom: 3px solid red;
 }
