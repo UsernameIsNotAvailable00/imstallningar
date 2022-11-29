@@ -6,12 +6,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/*style the navbar*/
-.navbar {
-    overflow: hidden;
-    background-color: black;
-}
-
 /*navbar links*/
 .navbar img {
     float: left;
