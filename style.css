@@ -9,26 +9,34 @@ body {
 
 /*style the navbar*/
 .navbar {
-    float: left;
     width: 50px;
     height: auto;
     padding: 15px;
 }
 
-.navbar a {
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: right;
+
+}
+
+.navbar li a {
+    display: block;
     text-decoration: none;
     font-size: 17px;
-    float: right;
-    display: block;
     color: black;
     text-align: center;
     padding: 13px 20px;
 }
 
-.navbar ul {
+.logo {
     float: left;
 }
 
-.navbar li:hover {
-    border-bottom: 3px solid red;
+.navbar li a:hover/*:not(.active)*/ {
+    background-color: grey;
 }
