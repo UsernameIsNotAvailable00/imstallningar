@@ -1,43 +1,63 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    margin: 0;
 }
 
-/*style the navbar*/
-.navbar {
-    width: 50px;
-    height: auto;
-    padding: 15px;
-    overflow: hidden;
-}
+/*NAVBAR*/
 
-.navbar ul {
-    list-style-type: none;
-    overflow: hidden;
-}
-
-.navbar li {
-    float: right;
-
-}
-
-.navbar li a {
-    display: block;
-    text-decoration: none;
-    font-size: 17px;
+/*style the text in navbar*/
+li, a {
+    font-size: 18px;
+    font-weight: 500;
     color: black;
-    text-align: center;
-    padding: 13px 20px;
+    text-decoration: none;
+}
+
+/*Outline of the navbar*/
+header {
+    display: flex;
+    padding: 10px 5px 10px 30px;
+    justify-content: flex-end; /*Make everyhting move to the right*/
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border-bottom: 3px solid gray;
 }
 
 .logo {
-    float: left;
+    cursor: pointer;
+    margin-right: auto; /*Make the logo move to the left*/
 }
 
-.navbar li a:hover/*:not(.active)*/ {
-    background-color: grey;
+.logo img {
+    width: 120px; 
 }
+
+.nav_links {
+    list-style: none;
+    margin-top: 20px; /*Pushing the text away from the top*/
+}
+
+.nav_links li {
+    display: inline-block; /*Make them into blocks that stand together*/
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: red;
+}
+
+.active {
+    color: grey;
+}
+
