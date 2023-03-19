@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*NAVBAR*/
+
+/*style the text in navbar*/
+li, a {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+/*Outline of the navbar*/
+#navbar {
+    padding: 10px 5px 10px 30px;
+    display: flex;
+    justify-content: flex-end; /*Make everyhting move to the right*/
+    background-color: white;
+    position: sticky;
+    position: -webkit-sticky; /*supporting safari version*/
+    top: 0;
+    box-shadow: 0px 1px 10px 1px rgb(214, 214, 214); /*shadow under the navbar*/
+    /*border-bottom: 3px solid black;*/
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto; /*Make the logo move to the left*/
+}
+
+/*size of the image*/
+.logo img {
+    width: 100px; 
+    margin-left: 20px;
+}
+
+.nav_links {
+    list-style: none;
+    margin-top: 25px; /*Pushing the text away from the top*/
+}
+
+.nav_links li {
+    display: inline-block; /*Make them into blocks that stand together*/
+    padding: 0px 20px;
+}
+
+/*Hovering the navbar*/
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: red;
+}
+
+.active {
+    color: grey;
+}
+
+/*BODY*/
+
+p {
+    padding-bottom: 500px;
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 40px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 50px;
+}
+
+h3 {
+    font-weight: 20;
+    font-size: 30px;
+}
+
+/*HOME*/
+
+.intro {
+    overflow: hidden;
+    background-image: url("/pics/Csk57jwA_2x.jpg");
+    background-size: cover;
+}
+
+.intro img {
+    width: 100%;
+    padding-top: 100px;
+}
+
+
+
+/*CONTACT US*/
+
+iframe {
+    border: none;
+    width: 50%;
+    height: 500px;
+    float: left;
+    display: block;
+}
+
+.kontaktinfo {
+    margin-top: 50px;
+    /*display: flex;
+    justify-content: center;*/
+    background-color: rgb(220, 153, 153);
+}
+
+.kontaktinfo div {
+    float: left;
+    width: 50%;
+    padding-left: 70px;
+    margin-top: 120px;
+    display: block;
+}
+.kontaktinfo p {
+    color: black;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 10;
+    font-size: 18px;
+}
+
+.kontaktinfo i {
+    color: red;
+    display: flex;
+    flex-direction: row;
+}
+.fa-location-dot {
+    margin-top: 30px;
+}
+
+.fa-solid {
+    margin-left: 50px;
+    margin-bottom: -450px;
+}
+
+.footer {
+  font-family: monospace;
+}
+
+/*FOOTER*/
+.footer {
+    background-color: black;
+}
