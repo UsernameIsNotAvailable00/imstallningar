@@ -78,7 +78,7 @@ li, a {
 
 .intro {
     overflow: hidden;
-    background-image: url("/pics/intro-dark.jpg");
+    background-image: url("intro-dark.jpg");
     background-size: cover;
     text-shadow: 1px 1px 5px #000000;
 }
