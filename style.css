@@ -1,0 +1,914 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+/*NAVIGATION BAR*/
+/*style the text in navbar*/
+li, a {
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Outline of the navbar*/
+#navbar {
+    padding: 10px 5px 10px 30px;
+    display: flex;
+    justify-content: flex-end; /*Make everyhting move to the right*/
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    position: -webkit-sticky; /*supporting safari version*/
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 0.5px 2px 0px rgb(116, 116, 116);
+    width: 100%;
+    height: 7vw;
+    transition: top 0.4s; /* Transition effect when sliding down (and up) */
+    -webkit-transition: top 0.4s;
+    -moz-transition: top 0.4s;
+    -o-transition: top 0.4s;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto; /*Make the logo move to the left*/
+}
+
+/*size of the image*/
+.logo img {
+    height: 5vw;
+    margin-left: 20px;
+}
+
+.nav_links li {
+    display: inline-block; /*Make them into blocks that stand together*/
+    padding: 0px 20px;
+}
+
+/*Hovering the navbar*/
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    
+}
+
+.nav_links li a:hover {
+    color: rgb(165, 2, 2);
+}
+
+/*MENU ICON*/
+
+.menuIcon {
+    margin-right: 20px;
+    display: none;
+}
+
+.menuIcon div {
+    background-color: black;
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+}
+
+.closebtn i {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: rgb(165, 2, 2);
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+/*MENU ICON End*/
+/*NAVIGATION BAR END*/
+
+/*AUTOMATIC IMAGE SLIDER*/
+.nav-slide .slider-frame {
+    overflow: hidden;
+    width: 100%;
+    height: 87vh;
+}
+
+.nav-slide .slide-container {
+    width: 500vw;
+    height: 87vh;
+    margin: 0 -400vw 0 0;
+    position: relative;
+    animation: 20s infinite normal slide-animation;
+    -webkit-animation: 20s infinite normal slide-animation;
+    -moz-animation: 20s infinite normal slide-animation;
+    -o-animation: 20s infinite normal slide-animation;
+}
+
+.nav-slide .slides {
+    height: 87vh;
+    width: 100vw;
+    position: relative;
+    float: right;
+    overflow: hidden;
+}
+
+.nav-slide .slides img {
+    height: 100%;
+    width: 100vw;
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+}
+
+.nav-slide h1 {
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    margin: 25vw 0vw 30vw 18vw;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 5px black;
+}
+
+@keyframes slide-animation {
+    0% {right: 0vw;}
+    8.3% {right: 0vw;}
+    16.6% {right: 0vw;}
+    25% {right: 100vw;}
+    33.3% {right: 100vw;}
+    41.6% {right: 100vw;}
+    50% {right: 200vw;}
+    58.3% {right: 200vw;}
+    66.6% {right: 200vw;}
+    75% {right: 300vw;}
+    83.3% {right: 300vw;}
+    91.6% {right: 300vw;}
+    100% {right: 400vw;}
+}
+@-webkit-keyframes slide-animation {
+    0% {right: 0vw;}
+    8.3% {right: 0vw;}
+    16.6% {right: 0vw;}
+    25% {right: 100vw;}
+    33.3% {right: 100vw;}
+    41.6% {right: 100vw;}
+    50% {right: 200vw;}
+    58.3% {right: 200vw;}
+    66.6% {right: 200vw;}
+    75% {right: 300vw;}
+    83.3% {right: 300vw;}
+    91.6% {right: 300vw;}
+    100% {right: 400vw;}
+}
+
+@-moz-keyframes slide-animation {
+    0% {right: 0vw;}
+    8.3% {right: 0vw;}
+    16.6% {right: 0vw;}
+    25% {right: 100vw;}
+    33.3% {right: 100vw;}
+    41.6% {right: 100vw;}
+    50% {right: 200vw;}
+    58.3% {right: 200vw;}
+    66.6% {right: 200vw;}
+    75% {right: 300vw;}
+    83.3% {right: 300vw;}
+    91.6% {right: 300vw;}
+    100% {right: 400vw;}
+}
+
+@-o-keyframes slide-animation {
+    0% {right: 0vw;}
+    8.3% {right: 0vw;}
+    16.6% {right: 0vw;}
+    25% {right: 100vw;}
+    33.3% {right: 100vw;}
+    41.6% {right: 100vw;}
+    50% {right: 200vw;}
+    58.3% {right: 200vw;}
+    66.6% {right: 200vw;}
+    75% {right: 300vw;}
+    83.3% {right: 300vw;}
+    91.6% {right: 300vw;}
+    100% {right: 400vw;}
+}
+
+/*AUTOMATIC IMAGE SLIDER END*/
+
+/*Introduction at the homepage*/
+.beginning {
+    display: flex;
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+.beginning div {
+    margin: auto 60px auto 60px;
+    line-height: 1.5;
+}
+
+.beginning p {
+    font-size: 18px;
+}
+
+.beginning h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgb(182, 10, 10);
+}
+
+.beginning img {
+    width: 50%;
+    height: max-content;
+}
+
+/*Introduction at the homepage end*/
+
+/*Values card section*/
+.card-section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-card, .value {
+    color: black;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    width: 28vw;
+}
+
+.card-container {
+    margin: 50px;
+}
+
+.card-section .fa-solid, .values .fa-solid {
+    color: red;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.text-card h4, .values h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.text-card p {
+    font-size: 15px;
+}
+
+.cards, .values {
+    display: flex;
+}
+@media (max-width: 425px) {
+    .menuIcon {
+        display: block;
+    }
+    .nav_links {
+        display: none;
+    }
+    .logo img {
+        height: 8vw;
+    }
+    .card-section {
+        height: auto;
+    }
+    .cards {
+        flex-direction: column;
+        -ms-flex-direction: column;
+    }
+    .text-card {
+        width: 55vw;
+    }
+    .services {
+        flex-direction: column;
+        -ms-flex-direction: column;
+    }
+    .service {
+        margin-bottom: 10px;
+        display: flex;
+        width: 100%;
+    }
+    .imgbox {
+        width: 50%;
+    }
+    .serviceText {
+        margin: auto;
+    }
+    .importantDiv {
+        width: 35vw;
+    }
+    .serviceIntroduction {
+        width: 100vw;
+    }
+    .servicePage .intro h1 {
+        margin-top: 30px;
+    }
+    .serviceIntroduction {
+        flex-direction: column;
+        -ms-flex-direction: column;
+        margin-top: 50px;
+        align-items:center;
+        width: 100px;
+    }
+    .serv {
+        margin-bottom: 10px;
+    }
+    .scaffolding, .foldableScaffolding, .fence {
+        margin: 30px 80px;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        margin: auto;
+        margin-right: 40%;
+    }
+    .scaffolding div, .foldableScaffolding div, .fence div {
+        padding: 0px;
+    }
+    .scaffolding img, .foldableScaffolding img, .fence img {
+        width: 60%;
+    }
+    .contact div {
+        font-size: 13px;
+    }
+    .contact h2 {
+        font-size: 20px;
+    }
+    .contact {
+        width: 90vw;
+    }
+    .kontaktinfo .fa-solid {
+        margin-left: 0px;
+    }
+    .kontaktinfo p {
+        font-size: 13px;
+    }
+    .history, .mission {
+        flex-direction: column;
+        -ms-flex-direction: column;
+    }
+    .history div, .mission div {
+        width: 90%;
+    }
+}
+/*Values card section end*/
+
+/*Homepage service-section*/
+.service-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    background-color: rgb(182, 10, 10);
+    margin: 0;
+}
+
+.serviceTitle {
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+}
+
+.serviceTitle h3 {
+    text-transform: uppercase; 
+    font-size: 20px;
+}
+
+.serviceTitle div , .projectTitle div{
+    height: 0.5px;
+    width: 200px;
+    background-color: white;
+    margin: auto; /*align in the middle*/
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.service {
+    width: 25vw;
+    background-color: white;
+    padding: 0px;
+    text-align: center;
+}
+
+.serviceText {
+    padding: 10px;
+    margin: 10px;
+}
+
+.service-section p, .projectTitle p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+}
+
+.service .imgbox {
+    width: 100%;
+    height: max-content;
+    overflow: hidden; /*don't show the overlow of the img*/
+}
+
+.service-section button {
+    width: 120px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: white;
+    font-family: "Roboto";
+    align-items: center;
+    color: black;
+}
+
+.service-section button:hover {
+    border-color: red;
+    color: red;
+    cursor: pointer;
+}
+/*Homepage service section end*/
+
+/*PROJECTS*/
+#projects {
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.projectTitle {
+    color: rgb(182, 10, 10);
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 40px;   
+}
+
+.projectTitle h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.projectTitle div {
+    background-color: rgb(182, 10, 10);
+}
+
+.projects {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.pcolumn {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+.pcolumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .pcolumn {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+  }
+}
+  
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .pcolumn {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/*PROEJCTS end*/
+
+/*SERVICE PAGE intro*/
+.intro {
+    background-image: url("introServiceImg.jpg");
+    color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 87vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+.servicePage .intro h1 {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.servicePage .intro img {
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+.serviceIntroduction {
+    width: 700px;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    text-align: center; /*makes the icons center too*/
+}
+
+.serv {
+    border: 1px solid white;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.serviceIntroduction img {
+    width: 500px;
+    height: auto;
+}
+/*SERVICE PAGE intro end*/
+
+/*SERVICEPAGE services*/
+.scaffolding, .foldableScaffolding, .fence {
+    margin: 40px 100px;
+    display: flex;
+}
+
+.scaffolding img, .foldableScaffolding img, .fence img {
+    width: 40%;
+    height: max-content;
+    margin: auto;
+}
+
+.scaffolding h3, .foldableScaffolding h3, .fence h3 {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    
+}
+
+.scaffolding div, .fence div {
+    line-height: 2;
+    margin: auto;
+    padding-left: 10%;
+}
+
+.foldableScaffolding div {
+    line-height: 2;
+    margin: auto;
+    padding-right: 10%;
+}
+/*SERVICEPAGE services end*/
+
+/*CONTACT-US FORM*/
+.contact div {
+    margin-bottom: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    font-weight: 5;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-transform:uppercase;
+}
+
+/*Text input-area*/
+input, textarea {
+    width: 500px;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.contact button {
+    width: 70px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.contact button:hover{
+    background-color: rgb(225, 225, 225);
+}
+
+/*The box itself*/
+.contact {
+    padding-top: 100px;
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*CONTACT-US FORM end*/
+
+/*CONTACT INFO*/
+iframe {
+    border: none;
+    width: 50%;
+    height: 400px;
+    float: left;
+    display: block;
+}
+
+.kontaktinfo {
+    margin-top: 50px;
+    padding-bottom: 400px; /*or else if we have borde-bottom, it appears at the top*/
+}
+
+.kontaktinfo div {
+    float: left;
+    width: 50%;
+    padding-left: 7vw;
+    margin-top: 100px;
+    display: block;
+}
+
+.kontaktinfo h3 {
+    margin: auto;
+    color: black;
+    font-weight: 30;
+    font-size: 4vw;
+}
+
+.kontaktinfo p {
+    color: black;
+    margin-left: 10px;
+    font-family: serif;
+    font-weight: 50;
+    font-size: 17px;
+}
+
+.kontaktinfo i {
+    color: red;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    
+}
+.kontaktinfo .fa-location-dot {
+    margin-top: 30px;
+    
+}
+
+.kontaktinfo .fa-solid {
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+/*CONTACT INFO end*/
+
+/*ABOUT US PAGE*/
+.history, .mission {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.history h3, .mission h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.history div, .mission div {
+    width: 30%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: auto;   
+    margin-bottom: auto;
+    line-height: 1.5;
+}
+
+.history img, .mission img {
+    width: 50%;
+    height: max-content;
+    filter: grayscale(100%);
+    margin: auto;
+}
+
+.mission img {
+    filter: grayscale(0%);
+}
+
+.values {
+    margin-bottom: 50px;
+    background-color:  rgb(182, 10, 10);
+    justify-content: center;
+}
+
+.value {
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 70px 30px;
+    line-height: 1.5;
+    width: 25vw;
+}
+
+.values .fa-solid {
+    margin-bottom: 10px;
+}
+
+/*ABOUT US PAGE end*/
+
+/*FOOTER*/
+footer {
+    background-color: #000000;
+    color: white;
+}
+
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer div {
+    margin: 2px;
+}
+
+.importantDiv {
+    width: 25vw;
+}
+
+.footer h6 {
+    font-size: 15px;
+    
+}
+
+.footer p {
+    padding-bottom: 10px;
+}
+
+.fa-brands {
+    color: red;
+    font-size: 23px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.fa-instagram {
+    margin-right: 15px;
+}
+
+.footer .fa-solid {
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    color: red;
+}
+
+.footer i p {
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+
+.policies a {
+    color: white;
+}
+
+.policies {
+    font-size: 13px;
+    width: 330px;
+    margin: auto;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.vbar {
+    width: 1px;
+    height: auto;
+    background-color: white;
+    margin: 0px 5px;
+}
+
+#footer {
+    background-color: #000000;
+}
+
+/*Privacy policy Page*/
+.prpo {
+    margin: 50px 140px;
+}
+
+/*Media Query for a tablet*/
+@media (max-width: 768px) {
+    #navbar {
+        height: 10vw;
+    }
+    #navbar img {
+        height: 7vw;
+    }
+    .nav-slide .slider-frame, .nav-slide .slide-container,.nav-slide .slides {
+        height: 57vh;
+    }
+    .nav-slide h1 {
+        margin-left: 3vw;
+    }
+    .beginning {
+        display: block;
+        width: 80vw;
+        margin: auto;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .beginning img {
+        width: 70%;
+        margin-top: 5%;
+    }
+    .values {
+        flex-direction: column;
+        -ms-flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .value {
+        margin-bottom: 50px;
+        margin-top: 0;
+        width: 70vw;
+        padding: 40px;
+    }
+}
+
+/*Media Query for a phone*/

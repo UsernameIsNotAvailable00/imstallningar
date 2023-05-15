@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+    <head>
+        <title>IM Ställningar</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Byggställningar">
+        <meta name="keywords" content="ställningar, byggställningar, im, im ställningar">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+    </head>
+    <body>
+        <header id="navbar">
+            <a class="logo"><img src="IM-logo.png" alt="logotyp"></a>
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="hem.html">Hem</a></li>
+                        <li><a href="tjanster.html">Tjänster</a></li>
+                        <li><a href="kontakta_oss.html">Kontakta oss</a></li>
+                        <li><a href="om_oss.html">Om oss</a></li>
+                    </ul>
+                </nav>
+                <div class="menuIcon" onclick="openNav()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="mobileNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                    <div class="overlay-content">
+                        <a href="hem.html">Hem</a>
+                        <a href="tjanster.html">Tjänster</a>
+                        <a href="kontakta_oss.html">Kontakta oss</a>
+                        <a href="om_oss.html">Om oss</a>
+                    </div>
+                </div>
+        </header>
+        <section class="nav-slide">
+            <div class="slider-frame">
+                <div class="slide-container">
+                    <div class="slides">
+                        <img src="slider1.jpg" alt="ställningar">
+                    </div>
+                    <div class="slides">
+                        <img src="slider2.jpg" alt="ställningar">
+                    </div>
+                    <div class="slides">
+                        <img src="slider3.jpg" alt="ställningar">
+                    </div>
+                    <div class="slides">
+                        <img src="slider4.jpg" alt="ställningar">
+                    </div>
+                    <div class="slides">
+                        <img src="slider1.jpg" alt="ställningar">
+                    </div>
+                </div>
+                <div>
+                    <h1>Hyr Ställningar i Stockholm</h1>
+                </div>
+            </div>
+        </section>
+        <section class="beginning">
+            <div>
+                <h2> Vi är IM Ställningar</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <img src="beginning.jpg" alt="ställningar">
+        </section>
+        <section class="card-section">
+            <div class="card-container reveal">
+                <div class="cards">
+                    <div class="text-card">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                        <h4>Säkerhet</h4>
+                        <p>Säkerhet är vår högsta prioritet, och vi följer strikta säkerhetsriktlinjer i allt vi gör</p>
+                    </div>
+                    <div class="text-card">
+                        <i class="fa-solid fa-medal"></i>
+                        <h4>Lösningar</h4>
+                        <p>Vi är dedikerade till att leverera skräddarsydda lösningar för att möta behoven för varje projekt</p>
+                    </div>
+                    <div class="text-card">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <h4>Personal</h4>
+                        <p>Vi jobbar med certifierade personal som har arbetat inom branschen i flera år</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service-section">
+            <div class="serviceTitle">
+                <h3>Våra tjänster</h3>
+                <p>Förutom byggställningar erbjuder vi även hantverkarställningar och byggstaket</p>
+                <div></div>
+            </div>
+            <div class="services">
+                <div class="service">
+                    <div class="imgbox">
+                        <img src="serv1.jpg" alt="tjänst: ställningar">
+                    </div>
+                    <div class="serviceText">
+                        <h4>Byggställningar</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        <button type="button" onclick="location.href='tjanster.html'">Läs mer <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="imgbox">
+                        <img src="serv2.jpg" alt="tjänst: hantverkarställningar">
+                    </div>
+                    <div class="serviceText">
+                        <h4>Hantverkställningar</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        <button type="button" onclick="location.href='tjanster.html'">Läs mer <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="imgbox">
+                        <img src="serv3.jpeg" alt="tjänst: byggstaket">
+                    </div>
+                    <div class="serviceText">
+                        <h4>Byggstaket</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        <button type="button" onclick="location.href='tjanster.html'">Läs mer <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="projectTitle">
+                <h3>Våra projekt</h3>
+                <p>Vi erbjuder pålitliga och högkvalitativa ställningar för byggprojekt av alla storlekar</p>
+                <div></div>
+            </div>
+            <div class="projects">
+                <div class="pcolumn">
+                    <img src="project1.jpg" alt="ställningar">
+                    <img src="project2.jpg" alt="ställningar">
+                    <img src="project3.jpg" alt="ställningar">
+                </div>
+                <div class="pcolumn">
+                    <img src="project4.jpg" alt="ställningar">
+                    <img src="project5.jpg" alt="ställningar">
+                    <img src="project6.jpg" alt="ställningar">
+                </div>
+                <div class="pcolumn">
+                    <img src="project7.jpg" alt="ställningar">
+                    <img src="project8.jpg" alt="ställningar">
+                    <img src="project9.jpg" alt="ställningar">
+                </div>
+                <div class="pcolumn">
+                    <img src="project10.jpg" alt="ställningar">
+                    <img src="project11.jpg" alt="ställningar">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="importantDiv">
+                    <h6>IM STÄLLNIGAR</h6><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div>
+                    <h6>Tjänster</h6><br>
+                    <p>Byggställningar</p>
+                    <p>Hantverkarställningar</p>
+                    <p>Byggstaket</p>
+                </div>
+                <div>
+                    <h6>Kontakta oss</h6><br>
+                    <i class="fa-solid fa-location-dot"><p>Gata xx, xxxxx Ort</p></i>
+                    <i class="fa-solid fa-envelope"><p>exempel@gmail.com</p></i>
+                    <i class="fa-solid fa-phone"><p>xxxxxxxxxxx</p></i>
+                    <p></p>
+                </div>
+                <div>
+                    <a><i class="fa-brands fa-instagram"></i></a>
+                    <a><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="policies">
+                <p>&copy; Copyright 2023 IM Ställningar</p>
+                <div class="vbar"></div>
+                <a href="privacypolicy.html" target="_blank">Integritetspolicy</a>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/bd868a913b.js" crossorigin="anonymous"></script>
+        <script src="myScript.js"></script>
+    </body>
+</html>
