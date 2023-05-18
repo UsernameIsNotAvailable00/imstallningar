@@ -262,8 +262,8 @@ li, a {
 }
 
 .beginning img {
-    width: 50%;
-    height: max-content;
+    height: 400px;
+    width: 600px;
 }
 
 /*Introduction at the homepage end*/
@@ -316,6 +316,10 @@ li, a {
     }
     .logo img {
         height: 8vw;
+    }
+    .beginning img {
+        width: 300px;
+        height: 200px;
     }
     .card-section {
         height: auto;
@@ -894,7 +898,8 @@ footer {
     }
 
     .beginning img {
-        width: 70%;
+        width: 450px;
+        height: 300px;
         margin-top: 5%;
     }
     .values {
