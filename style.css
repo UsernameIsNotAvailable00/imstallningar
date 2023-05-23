@@ -378,21 +378,6 @@ li, a {
     .scaffolding img, .foldableScaffolding img, .fence img {
         width: 60%;
     }
-    .contact div {
-        font-size: 13px;
-    }
-    .contact h2 {
-        font-size: 20px;
-    }
-    .contact {
-        width: 90vw;
-    }
-    .kontaktinfo .fa-solid {
-        margin-left: 0px;
-    }
-    .kontaktinfo p {
-        font-size: 13px;
-    }
     .history, .mission {
         flex-direction: column;
         -ms-flex-direction: column;
@@ -913,6 +898,15 @@ footer {
         margin-top: 0;
         width: 70vw;
         padding: 40px;
+    }
+    .kontaktinfo .fa-solid {
+        margin-left: 0px;
+    }
+    input, textarea {
+        width: 90vw;
+    }
+    .contact {
+        width: 90%;
     }
 }
 
