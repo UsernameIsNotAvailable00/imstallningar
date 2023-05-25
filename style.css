@@ -349,22 +349,6 @@ li, a {
     .importantDiv {
         width: 35vw;
     }
-    .serviceIntroduction {
-        width: 100vw;
-    }
-    .servicePage .intro h1 {
-        margin-top: 30px;
-    }
-    .serviceIntroduction {
-        flex-direction: column;
-        -ms-flex-direction: column;
-        margin-top: 50px;
-        align-items:center;
-        width: 100px;
-    }
-    .serv {
-        margin-bottom: 10px;
-    }
     .scaffolding, .foldableScaffolding, .fence {
         margin: 30px 80px;
         flex-direction: column;
@@ -907,6 +891,12 @@ footer {
     }
     .contact {
         width: 90%;
+    }
+    .serviceIntroduction {
+        display: none;
+    }
+    .servicePage .intro h1 {
+        margin-top: 200px;
     }
 }
 
